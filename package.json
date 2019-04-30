@@ -1,6 +1,6 @@
 {
   "name": "manage-side-effects",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Manage side effects in your application.",
   "main": "index.cjs.js",
   "module": "index.esm.js",
