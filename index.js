@@ -32,7 +32,7 @@ class ManageSideEffects {
 			throw new TypeError('Expected an side effect ID.');
 		}
 
-		this.sideEffects
+		this.sideEffects = this.sideEffects
 			.map((sideEffect) => {
 				const { id: currentId, cleanup } = sideEffect;
 				if (currentId === id) {
