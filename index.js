@@ -32,13 +32,6 @@ class ManageSideEffects {
 			throw new TypeError('Expected an side effect ID.');
 		}
 
-		const sideEffectExists = this.sideEffects.some(
-			({ id: currentId }) => id === currentId
-		);
-		if (!sideEffectExists) {
-			throw new Error(`No side effect with ID "${id}".`);
-		}
-
 		this.sideEffects
 			.map((sideEffect) => {
 				const { id: currentId, cleanup } = sideEffect;

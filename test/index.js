@@ -110,11 +110,3 @@ it('should throw if side effect ID is not provided when removing single side eff
 		instance.remove();
 	}, /Expected an side effect ID./);
 });
-
-it('should throw if side effect ID doesn’t exist when removing single side effect', function() {
-	const instance = fn();
-
-	assert.throws(() => {
-		instance.remove('becky');
-	}, /No side effect with ID "becky"./);
-});
