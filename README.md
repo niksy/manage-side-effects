@@ -70,8 +70,11 @@ Register side effect, providing optional ID for that side effect.
 Type: `Function`  
 Returns: `Function`
 
-Side effect to register. Return value should be function which contains cleanup
-code (e.g. event listener removing).
+Side effect to register.
+
+Return value should be function which contains cleanup code (e.g. event listener
+removing). If return value is not a function, a noop function will be used as
+return value.
 
 #### id
 
